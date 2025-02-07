@@ -7,7 +7,11 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-primary-100 dark:border-gray-800">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5">
-          <span className="text-2xl font-bold text-primary-900 dark:text-white">Marian</span>
+          <Link to="/" className="text-2xl font-bold text-primary-900 dark:text-white">DonvitoCodes</Link>
+          <div className="flex items-center gap-6">
+            <Link to="/casestudy" className="text-primary-700 hover:text-primary-900 dark:text-gray-300 dark:hover:text-white">
+              Case Study
+            </Link>
           <ThemeToggle />
         </nav>
       </header>
