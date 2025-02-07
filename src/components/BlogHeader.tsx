@@ -32,9 +32,9 @@ export default function BlogHeader() {
           <ThemeToggle />
         </nav>
         <div className="max-w-3xl">
-          <h1 className="text-4xl font-bold text-white">Blog</h1>
+          <h1 className="text-4xl font-bold text-white">Case Study</h1>
           <p className="mt-2 text-xl text-white/90">
-            Thoughts on AI, web development, and content creation
+            Case Studies on conversion rate, page optimization, and lead generation
           </p>
         </div>
       </div>
