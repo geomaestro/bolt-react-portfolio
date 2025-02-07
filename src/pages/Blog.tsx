@@ -4,7 +4,7 @@ import BlogCard from '../components/BlogCard';
 import { getAllPosts } from '../lib/posts';
 import type { Post } from '../lib/posts';
 
-export default function Blog() {
+export default function CaseStudy() {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
