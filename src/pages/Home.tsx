@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 
 export default function Home() {
@@ -7,13 +6,8 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-primary-100 dark:border-gray-800">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5">
-          <Link to="/" className="text-2xl font-bold text-primary-900 dark:text-white">DonvitoCodes</Link>
-          <div className="flex items-center gap-6">
-            <Link to="/blog" className="text-primary-700 hover:text-primary-900 dark:text-gray-300 dark:hover:text-white">
-              Blog
-            </Link>
-            <ThemeToggle />
-          </div>
+          <span className="text-2xl font-bold text-primary-900 dark:text-white">Marian</span>
+          <ThemeToggle />
         </nav>
       </header>
 
@@ -22,20 +16,20 @@ export default function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-primary-900 dark:text-white sm:text-5xl lg:text-6xl">
-              Hi, I'm Melvin Vivas
+              Hi, I'm Marian Armah
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-primary-800 dark:text-gray-300">
-              Tech content creator on Twitter/X. I build AI-powered applications and share my journey in tech.
-              Available for content creation and collaborations.
+              I'm a Conversion Rate Optimization specialist with experience helping businesses transform their digital presence into high-converting assets. Using a blend of analytics, user research, and experimentation, I optimize landing pages, websites, and checkout processes to drive tangible results.
+              Available for CRO projects and collaborations.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="https://x.com/messages/compose?recipient_id=donvito"
+                href="https://x.com/messages/compose?recipient_id=lookingfordidi"
                 className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-primary-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Contact for Content Creation
+                Contact for Conversion Rate Optimization
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -61,7 +55,7 @@ export default function Home() {
             <div className="relative aspect-square w-[400px] mx-auto">
               <img
                 src="https://avatars.githubusercontent.com/u/890270?s=400&u=e0b1aac65d7b1b74a7cdd7c9005f2af3e140a0ab&v=4"
-                alt="Melvin Vivas"
+                alt="Marian Armah"
                 className="h-full w-full rounded-full object-cover ring-4 ring-white/10 dark:ring-gray-800/10"
               />
             </div>
@@ -76,7 +70,7 @@ export default function Home() {
             Services
           </h2>
           <p className="mt-4 text-center text-lg text-primary-800 dark:text-gray-300">
-            Expert tech content creation and AI development services
+            Specialist in Conversion Rate Optimization
           </p>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
@@ -145,7 +139,7 @@ export default function Home() {
       <footer className="border-t border-primary-100 bg-white py-12 dark:border-gray-800 dark:bg-gray-950">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <p className="text-primary-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Melvin Vivas. All rights reserved.
+            © {new Date().getFullYear()} Marian Armah. All rights reserved.
           </p>
         </div>
       </footer>
@@ -155,55 +149,54 @@ export default function Home() {
 
 const services = [
   {
-    title: "Tech Content Creation",
-    description: "Engaging technical content that resonates with developers and tech enthusiasts.",
+    title: "Landing Page Optimization",
+    description: "optimizing landing pages by refining headlines, CTA buttons, form placements, and page structure to increase conversion rates. Every element is adjusted based on user behavior data to create a seamless experience.",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
       </svg>
     ),
     features: [
-      "Technical blog posts",
-      "Social media content",
-      "Tutorial creation",
-      "Developer advocacy",
+      "High-converting headlines and CTA placements",
+      "Improved form structures and page layouts for better engagement",
+      "Data-backed design changes",
     ],
   },
   {
-    title: "AI Development",
-    description: "Custom AI solutions and integrations for your applications.",
+    title: "A/B Testing",
+    description: "A/B tests on landing pages, CTAs, and forms to identify the most effective variations. By testing different elements—such as button colors, headlines, and layouts—i improve user engagement and increase conversions for your applications.",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
     features: [
-      "AI model integration",
-      "Custom AI solutions",
-      "LLM fine-tuning",
-      "AI-powered features",
+      "Test multiple variations of landing pages, CTAs, headlines, and forms",
+      "Data-driven insights to improve conversion rates",
+      "Continuous experimentation for ongoing optimization",
+      "Performance monitoring and analysis",
     ],
   },
   {
-    title: "Technical Consulting",
-    description: "Expert guidance on web development and AI implementation.",
+    title: "User Flow & Behavior Analysis",
+    description: "Analyze user journeys to identify friction points and drop-off areas, then streamline navigation to ensure a smooth path to conversion.",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
     features: [
-      "Architecture review",
-      "Tech stack selection",
+      "Identify drop-off points in the user journey",
+      "Optimize website navigation for a seamless experience",
       "Performance optimization",
-      "Best practices guidance",
+      "Improve conversion pathways with structured flow enhancements",
     ],
   },
 ];
 
 const socialLinks = [
   {
-    href: "https://x.com/donvito",
+    href: "https://x.com/lookingfordidi",
     label: "Twitter/X",
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -212,7 +205,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://github.com/donvito",
+    href: "https://github.com/geomaestro",
     label: "GitHub",
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -221,7 +214,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://www.linkedin.com/in/melvinvivas/",
+    href: "https://www.linkedin.com/in/marina-armah/",
     label: "LinkedIn",
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -231,22 +224,22 @@ const socialLinks = [
   },
 ];
 
-const featuredContent = [
+const casestudy = [
   {
-    title: "Building AI-Powered Apps",
-    description: "Learn how to integrate AI capabilities into your applications using modern tools and frameworks.",
+    title: "Shopify E-commerce Store for Fashion Accessories",
+    description: "Case Study on Shopify E-commerce Store for Fashion Accessories.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
     link: "/blog/building-resilient-uis",
   },
   {
-    title: "Content Creation Tips",
-    description: "Best practices for creating engaging technical content and building your audience.",
+    title: "SaaS Subscription Page Optimization",
+    description: "Case Study on B2B SaaS Subscription Page Optimization.",
     image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&q=80&w=1000",
     link: "/blog/web-fundamentals",
   },
   {
-    title: "Web Development Journey",
-    description: "Insights and experiences from my journey in web development and tech.",
+    title: "Lead Generation for a Law Firm",
+    description: "Case Study on Lead Generation for a Law Firm.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
     link: "/blog/getting-started-with-remix",
   },
