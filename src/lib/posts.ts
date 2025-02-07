@@ -79,8 +79,7 @@ The B2B Saas Startup was facing low free trial sign-up rate with sign-ups quanti
     slug: "lead-generation-for-law-firm",
     title: " Lead Generation for a Law Firm",
     date: "October 13, 2024",  
-    coverImage: "https://th.bing.com/th/id/OIP.YXgN51pvxLhCOD35hMQauQHaE8?rs=1&pid=ImgDetMain
-    ",
+    coverImage: "https://th.bing.com/th/id/OIP.YXgN51pvxLhCOD35hMQauQHaE8?rs=1&pid=ImgDetMain",
     content: `
 # Case Study on Lead Generation for a Law Firm
 
