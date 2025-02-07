@@ -11,98 +11,103 @@ export interface Post {
 
 const POSTS = [
   {
-    slug: "getting-started-with-remix",
-    title: "Getting Started with Remix",
-    date: "March 25, 2024",
-    excerpt: "Learn how to build modern web applications with Remix framework.",
-    coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000",
+    slug: "shopify-ecommerce-store-for-fashion-accessories",
+    title: "Shopify E-commerce Store for Fashion Accessories",
+    date: "January 25, 2024",
+    coverImage:     "https://cdn.dribbble.com/users/2114334/screenshots/9026429/group_151_4x.png",
     content: `
-# Getting Started with Remix
+# Case Study on Shopify E-commerce Store for Fashion Accessories
 
-Remix is a full-stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience.
+A growing online fashion brand specializing in trendy apparel. They struggled with low conversion rate and needed an improvement
 
-## Why Remix?
+## Problem
 
-Remix provides an excellent developer experience while producing applications that naturally do the right thing for the web. It leverages web fundamentals that have been around for decades while providing modern UX capabilities.
+The website had high traffic of potential costumers but a low conversion rate of 1.5% and wanted to improve their conversion rate
 
-## Key Features
+## Strategic Approach To Problem
 
-* Nested routing with co-located data loading
-* Built-in error handling and form validation
-* Progressive enhancement by default
-* Server-side rendering with client-side hydration
+* I conducted a funnel analysis to understand where users dropped off.
+* I ran A/B tests on product pages with different CTA (call-to-action) buttons and page layouts.
+* Improved the mobile user experience by making the checkout process more intuitive and reducing the number of steps.
 
-## Getting Started
+## Results
 
-To create a new Remix project, you can use the following command:
+* Increased conversion rate by 30%
+* Reduced checkout abandonment by 20%
 
-\`\`\`bash
-npx create-remix@latest
-\`\`\`
+## Tools Used in This Project
 
-This will set up a new Remix project with everything you need to start building your application.
+* Google Analytics 
+* Optimizely 
+* Hotjar for heatmaps
     `,
   },
   {
-    slug: "web-fundamentals",
-    title: "Web Fundamentals Every Developer Should Know",
-    date: "March 24, 2024",
-    excerpt: "Essential concepts for building better websites with strong foundations.",
-    coverImage: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=2000",
+    slug: "b2b-saas-startup",
+    title: "SaaS Subscription Page Optimization",
+    date: "May 24, 2024",
+    coverImage: "https://th.bing.com/th/id/OIP.b24Ay2EQx6VnZe5AnHYtVQHaE7?w=1471&h=980&rs=1&pid=ImgDetMain",
     content: `
-# Web Fundamentals Every Developer Should Know
+#  Case Study on B2B SaaS Subscription Page Optimization
 
-Understanding web fundamentals is crucial for building better websites. These core concepts form the foundation of modern web development.
+A cloud-based project management software targeting small to mid-sized businesses. They faced a low trial-to-paid conversion rate and needed better pricing page optimization.
 
-## HTML Semantics
+## Problem
+The B2B Saas Startup was facing low free trial sign-up rate with sign-ups quantifying (2.5%). They also observed a high drop-off rate on pricing page.
 
-Using semantic HTML elements helps improve accessibility, SEO, and maintainability. Choose elements that accurately describe their content's meaning.
+## Strategic Approach To Problem
 
-## Progressive Enhancement
+* Introduced a comparison table showing plan benefits.
+* A/B tested different CTA text (“Start Free Trial” vs. “Try for Free”).
+* Removed unnecessary form fields to reduce friction.
+* Added urgency elements (“Limited-time 30-day trial” banner).
 
-Start with a solid HTML foundation and layer on CSS and JavaScript. This ensures your site works for everyone, regardless of their device or connection speed.
+## Results
 
-## Performance Considerations
+* Trial sign-ups increased by 47%.
+* Pricing page bounce rate dropped by 18%.
+* Higher conversion from free trial to paid users (20%  increase).
 
-* Minimize HTTP requests
-* Optimize images and assets
-* Use appropriate caching strategies
-* Implement lazy loading where appropriate
+## Tools Used in This Project
 
-## Accessibility
-
-Make your websites accessible to everyone by following WCAG guidelines, using proper ARIA attributes, and ensuring keyboard navigation works correctly.
+* Google Optimize (A/B Testing)
+* FullStory (User Behavior Analysis)
+* HubSpot (Lead Nurturing)
     `,
   },
   {
-    slug: "building-resilient-uis",
-    title: "Building Resilient User Interfaces",
-    date: "March 23, 2024",
-    excerpt: "Best practices for creating robust and maintainable UI components.",
-    coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=2000",
+    slug: "lead-generation-for-law-firm",
+    title: " Lead Generation for a Law Firm",
+    date: "October 13, 2024",  
+    coverImage: "https://th.bing.com/th/id/OIP.YXgN51pvxLhCOD35hMQauQHaE8?rs=1&pid=ImgDetMain
+    ",
     content: `
-# Building Resilient User Interfaces
+# Case Study on Lead Generation for a Law Firm
 
-Creating resilient user interfaces is essential for delivering reliable web applications that can handle various edge cases and user interactions gracefully.
+A boutique legal practice focusing on corporate and family law. Their website had low engagement, and they needed more leads through their contact forms and consultation bookings.
 
-## Error Boundaries
+## Problem
 
-Implement error boundaries to catch and handle runtime errors gracefully, preventing entire application crashes and providing meaningful feedback to users.
+The law firm was experiencig a low conversion rate on contact forms (1.2%) but with high traffic of vistors on their landing page. Potential clients were dropping off before booking a consultation.
 
-## Loading States
+## Strategic Approach To Problem
 
-Design meaningful loading states that maintain layout stability and provide visual feedback during data fetching or processing operations.
+* Redesigned landing page to highlight client testimonials & case results.
+* A/B tested form length (long form vs. short form).
+* Added live chat for instant consultation booking.
+* Improved mobile experience by reducing text and increasing  CTA visibility
 
-## Offline Support
+## Results
 
-* Implement service workers for offline functionality
-* Cache critical resources
-* Handle network failures gracefully
-* Sync data when connection is restored
+* Contact form submissions increased from 1.2% to 4.5%.
+* More consultation calls booked (30% increase).
+* Mobile conversion rate improved by 40%.
 
-## Form Handling
+## Tools Used for This Project
 
-Build robust form handling with proper validation, error messages, and submission states. Always provide clear feedback and maintain data integrity.
+Crazy Egg (Heatmaps)
+HubSpot (Lead Tracking)
+Unbounce (Landing Page Optimization)
     `,
   },
 ];
