@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 
-export default function Home() {
+function Home() {
   return (
     <div className="min-h-screen bg-background-light dark:bg-gray-950">
       {/* Header */}
       <header className="border-b border-primary-100 dark:border-gray-800">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5">
-          <Link to="/" className="text-2xl font-bold text-primary-900 dark:text-white">DonvitoCodes</Link>
+          <Link to="/" className="text-2xl font-bold text-primary-900 dark:text-white"></Link>
           <div className="flex items-center gap-6">
-            <Link to="/casestudy" className="text-primary-700 hover:text-primary-900 dark:text-gray-300 dark:hover:text-white">
-              Case Study
+            <Link to="/blog" className="text-primary-700 hover:text-primary-900 dark:text-gray-300 dark:hover:text-white">
+              Case Studies
             </Link>
-          <ThemeToggle />
+            <ThemeToggle />
+          </div>
         </nav>
       </header>
 
@@ -24,12 +25,12 @@ export default function Home() {
               Hi, I'm Marian Armah
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-primary-800 dark:text-gray-300">
-              I'm a Conversion Rate Optimization specialist with experience helping businesses transform their digital presence into high-converting assets. Using a blend of analytics, user research, and experimentation, I optimize landing pages, websites, and checkout processes to drive tangible results.
+              Conversion Rate Optimization specialist with experience in helping businesses transform their digital presence into high-converting assets. Using a blend of analytics, user research, and experimentation, I optimize landing pages, websites, and checkout processes to drive tangible results.
               Available for CRO projects and collaborations.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="https://x.com/messages/compose?recipient_id=lookingfordidi"
+                href="https://x.com/messages/compose?recipient_id=lookindfordidi"
                 className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-primary-600"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +60,7 @@ export default function Home() {
             <div className="absolute -inset-4 rounded-full bg-primary-100/50 blur-3xl dark:bg-primary-900/30" />
             <div className="relative aspect-square w-[400px] mx-auto">
               <img
-                src="https://avatars.githubusercontent.com/u/890270?s=400&u=e0b1aac65d7b1b74a7cdd7c9005f2af3e140a0ab&v=4"
+                src="https://avatars.githubusercontent.com/u/158234338?v=4"
                 alt="Marian Armah"
                 className="h-full w-full rounded-full object-cover ring-4 ring-white/10 dark:ring-gray-800/10"
               />
@@ -75,7 +76,7 @@ export default function Home() {
             Services
           </h2>
           <p className="mt-4 text-center text-lg text-primary-800 dark:text-gray-300">
-            Specialist in Conversion Rate Optimization
+            Specialist in Conversion Rate Optimization services
           </p>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
@@ -108,14 +109,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Content */}
+      {/* Case Studies */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="text-center text-3xl font-bold tracking-tight text-primary-900 dark:text-white">
-            Featured Content
+            Case Studies
           </h2>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredContent.map((item) => (
+            {caseStudies.map((item) => (
               <Link
                 key={item.title}
                 to={item.link}
@@ -155,7 +156,7 @@ export default function Home() {
 const services = [
   {
     title: "Landing Page Optimization",
-    description: "optimizing landing pages by refining headlines, CTA buttons, form placements, and page structure to increase conversion rates. Every element is adjusted based on user behavior data to create a seamless experience.",
+    description: "Optimizing landing pages by refining headlines, CTA buttons, form placements, and page structure to increase conversion rates. Every element is adjusted based on user behavior data to create a seamless experience.",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -169,7 +170,7 @@ const services = [
   },
   {
     title: "A/B Testing",
-    description: "A/B tests on landing pages, CTAs, and forms to identify the most effective variations. By testing different elements—such as button colors, headlines, and layouts—i improve user engagement and increase conversions for your applications.",
+    description: "A/B tests on landing pages, CTAs, and forms to identify the most effective variations. By testing different elements—such as button colors, headlines, and layouts—I improve user engagement and increase conversions for your applications",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -194,7 +195,7 @@ const services = [
       "Identify drop-off points in the user journey",
       "Optimize website navigation for a seamless experience",
       "Performance optimization",
-      "Improve conversion pathways with structured flow enhancements",
+      "Improve conversion pathways with structured flow enhancements"
     ],
   },
 ];
@@ -219,7 +220,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://www.linkedin.com/in/marina-armah/",
+    href: "https://www.linkedin.com/in/marian-armah/",
     label: "LinkedIn",
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -229,23 +230,25 @@ const socialLinks = [
   },
 ];
 
-const casestudy = [
+const caseStudies = [
   {
-    title: "Shopify E-commerce Store for Fashion Accessories",
+    title: "Improving Conversion Rate for Shopify E-commerce Store",
     description: "Case Study on Shopify E-commerce Store for Fashion Accessories.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
-    link: "/blog/building-resilient-uis",
+    image: "https://cdn.dribbble.com/users/2114334/screenshots/9026429/group_151_4x.png",
+    link: "/case_studies/improving-conversion-rate-for-shopify-ecommerce-store",
   },
   {
     title: "SaaS Subscription Page Optimization",
     description: "Case Study on B2B SaaS Subscription Page Optimization.",
-    image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&q=80&w=1000",
-    link: "/blog/web-fundamentals",
+    image: "https://th.bing.com/th/id/OIP.b24Ay2EQx6VnZe5AnHYtVQHaE7?w=1471&h=980&rs=1&pid=ImgDetMain",
+    link: "/case_studies/saas-subscription-page-optimization",
   },
   {
     title: "Lead Generation for a Law Firm",
     description: "Case Study on Lead Generation for a Law Firm.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-    link: "/blog/getting-started-with-remix",
+    image: "https://th.bing.com/th/id/OIP.YXgN51pvxLhCOD35hMQauQHaE8?rs=1&pid=ImgDetMain",
+    link: "/case_studies/lead-generation-for-a-law-firm",
   },
 ];
+
+export default Home;
