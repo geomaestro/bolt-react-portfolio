@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { getPost } from '../lib/posts';
 import type { Post } from '../lib/posts';
 
-export default function BlogPost() {
+export default function CaseStudy() {
   const { slug } = useParams<{ slug: string }>();
   const [post, setPost] = useState<Post | null>(null);
 
@@ -32,7 +32,7 @@ export default function BlogPost() {
               to="/blog"
               className="mb-4 inline-block text-sm font-medium text-white/80 hover:text-white"
             >
-              ← Back to blog
+              ← Back to case studies
             </Link>
             <h1 className="text-4xl font-bold text-white">{post.title}</h1>
             <time className="mt-2 block text-lg text-white/80">{post.date}</time>
