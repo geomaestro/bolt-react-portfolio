@@ -4,17 +4,16 @@ export interface Post {
   slug: string;
   title: string;
   date: string;
-  excerpt: string;
   coverImage: string;
   content: string;
 }
 
 const POSTS = [
   {
-    slug: "shopify-ecommerce-store-for-fashion-accessories",
-    title: "Shopify E-commerce Store for Fashion Accessories",
+    slug: "improving-conversion-rate-for-shopify-ecommerce-store",
+    title: "Improving Cnoversion Rate for Shopify E-commerce Store",
     date: "January 25, 2024",
-    coverImage:     "https://cdn.dribbble.com/users/2114334/screenshots/9026429/group_151_4x.png",
+    coverImage: "https://cdn.dribbble.com/users/2114334/screenshots/9026429/group_151_4x.png",
     content: `
 # Case Study on Shopify E-commerce Store for Fashion Accessories
 
@@ -48,7 +47,7 @@ The website had high traffic of potential costumers but a low conversion rate of
     date: "May 24, 2024",
     coverImage: "https://th.bing.com/th/id/OIP.b24Ay2EQx6VnZe5AnHYtVQHaE7?w=1471&h=980&rs=1&pid=ImgDetMain",
     content: `
-#  Case Study on B2B SaaS Subscription Page Optimization
+# Case Study on B2B SaaS Subscription Page Optimization
 
 A cloud-based project management software targeting small to mid-sized businesses. They faced a low trial-to-paid conversion rate and needed better pricing page optimization.
 
@@ -67,18 +66,12 @@ The B2B Saas Startup was facing low free trial sign-up rate with sign-ups quanti
 * Trial sign-ups increased by 47%.
 * Pricing page bounce rate dropped by 18%.
 * Higher conversion from free trial to paid users (20%  increase).
-
-## Tools Used in This Project
-
-* Google Optimize (A/B Testing)
-* FullStory (User Behavior Analysis)
-* HubSpot (Lead Nurturing)
     `,
   },
   {
     slug: "lead-generation-for-law-firm",
-    title: " Lead Generation for a Law Firm",
-    date: "October 13, 2024",  
+    title: "Lead Generation for a Law Firm",
+    date: "October 23, 2024",
     coverImage: "https://th.bing.com/th/id/OIP.YXgN51pvxLhCOD35hMQauQHaE8?rs=1&pid=ImgDetMain",
     content: `
 # Case Study on Lead Generation for a Law Firm
