@@ -5,7 +5,6 @@ interface BlogCardProps {
     slug: string;
     title: string;
     date: string;
-    excerpt: string;
     coverImage: string;
   };
 }
@@ -26,7 +25,6 @@ export default function BlogCard({ post }: BlogCardProps) {
           <h2 className="mt-2 text-xl font-semibold text-gray-900 group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400">
             {post.title}
           </h2>
-          <p className="mt-3 text-gray-600 dark:text-gray-300">{post.excerpt}</p>
           <span className="mt-4 inline-block text-primary-600 dark:text-primary-400">Read more →</span>
         </div>
       </Link>
