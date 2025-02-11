@@ -22,7 +22,7 @@ function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-primary-900 dark:text-white sm:text-5xl lg:text-6xl">
-              Hi, I'm Marian Armah
+              Hi, I'm Farina Armah
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-primary-800 dark:text-gray-300">
               Conversion Rate Optimization specialist with experience in helping businesses transform their digital presence into high-converting assets. Using a blend of analytics, user research, and experimentation, I optimize landing pages, websites, and checkout processes to drive tangible results.
@@ -145,7 +145,7 @@ function Home() {
       <footer className="border-t border-primary-100 bg-white py-12 dark:border-gray-800 dark:bg-gray-950">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <p className="text-primary-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Marian Armah. All rights reserved.
+            © {new Date().getFullYear()} Farina Armah. All rights reserved.
           </p>
         </div>
       </footer>
@@ -220,7 +220,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://www.linkedin.com/in/marian-armah/",
+    href: "https://www.linkedin.com/in/farina-armah/",
     label: "LinkedIn",
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
